@@ -3,6 +3,7 @@
 
 $main-color: rgb(3, 64, 120);
 $white: #fff;
+$grey: #f2f2f2;
 @media (min-width: 1200px) {
 body {
   font-family: Roboto;
@@ -19,9 +20,10 @@ body {
 }
 .start {
     display: flex;
+    align-items: center;
     justify-content: center;
     background: $main-color;
-    height: 100vh;
+    height: 800px;
   &-content{
     display: flex;
 }
@@ -31,40 +33,101 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0 100px 0 0;
+    gap: 30px;
     > h1 {
         font-weight: 700;
         font-size: 48px;
         color: $white;
+        align-self: flex-start;
     }
     > p {
       color: $white;
+      font-size: 16px;
     }
 }
   &-btn{
-
+    background: $white;
+    color: #000;
+    text-align: center;
+    height: 48px;
+    padding: 16px;
+    border-radius: 10px;
+    font-weight: 700;
+    width: 100%;
 }
   &-img{
     width: 100%;
-    height: 575px;
+    height: 600px;
+    border-radius: 20px;
     background-image: 
   linear-gradient(to top, rgba(3, 64, 120,0.7), rgba(3, 64, 120,0.7)),
   url(../img/adam-jicha-wHPO8RFR6Sk-unsplash.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 }
 .squad {
+  margin: 100px 0 0 0;
+  display: flex;
+  justify-content: center;
+  > div  {
+    
+    > h2 {
+      color: $main-color;
+      text-align: center;
+      font-size: 36px;
+      font-weight: 700;
+      margin: 0 0 30px 0;
+    }
+    > p {
+      color: $main-color;
+      text-align: center;
+      font-size: 16px;
+      padding: 0 200px;
+      margin: 0 0 60px 0;
+    }
+  }
   &-row{
-
+    display: flex;
+    gap: 32px;
 }
   &-column{
-
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
   &-card{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 300px;
+    background: $grey;
+    color: $main-color;
+    border-radius: 20px;
+    > img {
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    > h3 {
+      font-weight: 700;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
 }
 }
 .portfolio {
+  > div {
+    display: flex;
+    justify-content: center;
+    > h2 {
+      text-align: center;
+    }
+  }
   &-gallery{
 
 }
