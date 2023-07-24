@@ -80,14 +80,14 @@ h1, h2, h3, h4, h5, h6 {
     width: 1000px;
   }
   .header {
-    background-color: rgb(3, 64, 120);
+    background-color: rgb(255, 0, 0);
     padding: 20px 100px;
   }
   .start {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(3, 64, 120);
+    background: rgb(255, 0, 0);
     height: 800px;
   }
   .start-content {
@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 600px;
     border-radius: 20px;
-    background-image: linear-gradient(to top, rgba(3, 64, 120, 0.7), rgba(3, 64, 120, 0.7)), url(../img/adam-jicha-wHPO8RFR6Sk-unsplash.jpg);
+    background-image: linear-gradient(to top, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url(../img/adam-jicha-wHPO8RFR6Sk-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -135,14 +135,14 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
   }
   .squad > div > h2 {
-    color: rgb(3, 64, 120);
+    color: rgb(176, 0, 0);
     text-align: center;
     font-size: 36px;
     font-weight: 700;
     margin: 0 0 30px 0;
   }
   .squad > div > p {
-    color: rgb(3, 64, 120);
+    color: #000;
     text-align: center;
     font-size: 16px;
     padding: 0 200px;
@@ -166,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
     gap: 10px;
     height: 300px;
     background: #f2f2f2;
-    color: rgb(3, 64, 120);
+    color: rgb(176, 0, 0);
     border-radius: 20px;
   }
   .squad-card > img {
@@ -191,7 +191,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .portfolio > div > h2 {
     text-align: left;
-    color: rgb(3, 64, 120);
+    color: rgb(176, 0, 0);
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 50px;
@@ -202,7 +202,7 @@ h1, h2, h3, h4, h5, h6 {
   .portfolio-btn-right {
     position: absolute;
     z-index: 2;
-    top: 35%;
+    top: 25%;
     right: 50px;
     background-image: url(../img/arr-right.svg);
     height: 64px;
@@ -216,6 +216,9 @@ h1, h2, h3, h4, h5, h6 {
   .portfolio-btn-right:hover {
     background-color: rgba(255, 255, 255, 0.5);
     transition: all 0.3s;
+  }
+  .portfolio-imgs {
+    display: flex;
   }
   .portfolio-block-1 {
     display: flex;
@@ -231,6 +234,7 @@ h1, h2, h3, h4, h5, h6 {
   .portfolio-block-1 > a {
     opacity: 0;
     position: absolute;
+    transition: all 0.3s;
   }
   .portfolio-block-1 > a:hover {
     opacity: 1;
@@ -238,7 +242,7 @@ h1, h2, h3, h4, h5, h6 {
     backdrop-filter: blur(10px);
   }
   .portfolio-block-1 > h3 {
-    color: rgb(3, 64, 120);
+    color: rgb(176, 0, 0);
     font-size: 48px;
     font-weight: 500;
   }
@@ -247,10 +251,45 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     padding: 0 200px;
   }
+  .portfolio-block-2 {
+    display: flex;
+    opacity: 0;
+    width: 0;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transform: translateX(200%);
+    gap: 20px;
+  }
+  .portfolio-block-2 > img {
+    height: 500px;
+    width: 100%;
+  }
+  .portfolio-block-2 > a {
+    width: 0;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s;
+  }
+  .portfolio-block-2 > a:hover {
+    opacity: 1;
+    transition: all 0.3s;
+    backdrop-filter: blur(10px);
+  }
+  .portfolio-block-2 > h3 {
+    color: rgb(176, 0, 0);
+    font-size: 48px;
+    font-weight: 500;
+  }
+  .portfolio-block-2 > p {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 200px;
+  }
   .portfolio-btn-left {
     z-index: 2;
     position: absolute;
-    top: 35%;
+    top: 25%;
     left: 50px;
     background-image: url(../img/arr-right.svg);
     -webkit-transform: rotate(180deg);

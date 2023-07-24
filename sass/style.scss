@@ -1,7 +1,8 @@
 @import "cfg.scss";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-$main-color: rgb(3, 64, 120);
+$main-color: rgb(255, 0, 0);
+$sub-color: rgb(176, 0, 0);
 $white: #fff;
 $grey: #f2f2f2;
 @media (min-width: 1200px) {
@@ -60,7 +61,7 @@ body {
     height: 600px;
     border-radius: 20px;
     background-image: 
-  linear-gradient(to top, rgba(3, 64, 120,0.7), rgba(3, 64, 120,0.7)),
+  linear-gradient(to top, rgba(255, 0, 0,0.5), rgba(255, 0, 0,0.5)),
   url(../img/adam-jicha-wHPO8RFR6Sk-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -73,14 +74,14 @@ body {
   > div  {
     
     > h2 {
-      color: $main-color;
+      color: $sub-color;
       text-align: center;
       font-size: 36px;
       font-weight: 700;
       margin: 0 0 30px 0;
     }
     > p {
-      color: $main-color;
+      color: #000;
       text-align: center;
       font-size: 16px;
       padding: 0 200px;
@@ -105,7 +106,7 @@ body {
     gap: 10px;
     height: 300px;
     background: $grey;
-    color: $main-color;
+    color: $sub-color;
     border-radius: 20px;
     > img {
       height: 80px;
@@ -131,7 +132,7 @@ body {
     margin-top: 150px;
     > h2 {
       text-align: left;
-      color: $main-color;
+      color: $sub-color;
       font-size: 48px;
       font-weight: 700;
       margin-bottom: 50px;
@@ -143,7 +144,7 @@ body {
   &-btn-right{
     position: absolute;
     z-index: 2;
-    top: 35%;
+    top: 25%;
     right: 50px;
     background-image: url(../img/arr-right.svg);
     height: 64px;
@@ -159,7 +160,7 @@ body {
     transition: all 0.3s;
   }
   &-imgs{
-
+    display: flex;
 }
   &-block-1{
     display: flex;
@@ -174,6 +175,7 @@ body {
     > a {
       opacity: 0;
       position: absolute;
+      transition: all 0.3s;
     }
     >a:hover {
       opacity: 1;
@@ -181,7 +183,7 @@ body {
       backdrop-filter: blur(10px);
     }
     > h3 {
-      color: $main-color;
+      color: $sub-color;
       font-size: 48px;
       font-weight: 500;
     }
@@ -191,13 +193,48 @@ body {
       padding: 0 200px;
     }
 }
+&-block-2{
+  display: flex;
+  opacity: 0;
+  width: 0;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transform: translateX(200%);
+  gap: 20px;
+  > img {
+    height: 500px;
+    width: 100%;
+  }
+  > a {
+    width: 0;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s;
+  }
+  >a:hover {
+    opacity: 1;
+    transition: all 0.3s;
+    backdrop-filter: blur(10px);
+  }
+  > h3 {
+    color: $sub-color;
+    font-size: 48px;
+    font-weight: 500;
+  }
+  > p {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 200px;
+  }
+}
   &-dots{
 
 }
   &-btn-left{
     z-index: 2;
     position: absolute;
-    top: 35%;
+    top: 25%;
     left: 50px;
     background-image: url(../img/arr-right.svg);
     -webkit-transform: rotate(180deg);
