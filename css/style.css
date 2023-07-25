@@ -75,6 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 1200px) {
   body {
     font-family: Roboto;
+    overflow-x: hidden;
   }
   .container {
     width: 1000px;
@@ -82,6 +83,22 @@ h1, h2, h3, h4, h5, h6 {
   .header {
     background-color: rgb(255, 0, 0);
     padding: 20px 100px;
+    height: 100px;
+  }
+  .header > img {
+    height: 60px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 150px;
+    gap: 20px;
+    text-align: center;
+  }
+  .footer > img {
+    height: 60px;
   }
   .start {
     display: flex;
@@ -202,7 +219,7 @@ h1, h2, h3, h4, h5, h6 {
   .portfolio-btn-right {
     position: absolute;
     z-index: 2;
-    top: 25%;
+    top: 30%;
     right: 50px;
     background-image: url(../img/arr-right.svg);
     height: 64px;
@@ -211,13 +228,14 @@ h1, h2, h3, h4, h5, h6 {
     background-size: 40px 40px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    transition: all 0.3s;
+    transition: all, 0.3s;
   }
   .portfolio-btn-right:hover {
     background-color: rgba(255, 255, 255, 0.5);
-    transition: all 0.3s;
+    transition: all, 0.3s;
   }
   .portfolio-imgs {
+    position: relative;
     display: flex;
   }
   .portfolio-block-1 {
@@ -226,6 +244,8 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     position: relative;
     gap: 20px;
+    transform: translateX(0%);
+    transition: all, 0.5s !important;
   }
   .portfolio-block-1 > img {
     height: 500px;
@@ -234,11 +254,11 @@ h1, h2, h3, h4, h5, h6 {
   .portfolio-block-1 > a {
     opacity: 0;
     position: absolute;
-    transition: all 0.3s;
+    transition: all, 0.3s;
   }
   .portfolio-block-1 > a:hover {
     opacity: 1;
-    transition: all 0.3s;
+    transition: all, 0.3s;
     backdrop-filter: blur(10px);
   }
   .portfolio-block-1 > h3 {
@@ -253,12 +273,11 @@ h1, h2, h3, h4, h5, h6 {
   }
   .portfolio-block-2 {
     display: flex;
-    opacity: 0;
-    width: 0;
     flex-direction: column;
     align-items: center;
     position: relative;
-    transform: translateX(200%);
+    transform: translateX(0%);
+    transition: all, 0.5s;
     gap: 20px;
   }
   .portfolio-block-2 > img {
@@ -266,14 +285,13 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
   }
   .portfolio-block-2 > a {
-    width: 0;
     opacity: 0;
     position: absolute;
-    transition: all 0.3s;
+    transition: all, 0.3s;
   }
   .portfolio-block-2 > a:hover {
     opacity: 1;
-    transition: all 0.3s;
+    transition: all, 0.3s;
     backdrop-filter: blur(10px);
   }
   .portfolio-block-2 > h3 {
@@ -286,10 +304,160 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     padding: 0 200px;
   }
+  .portfolio-block-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: all, 0.5s;
+    gap: 20px;
+    transform: translateX(0%);
+  }
+  .portfolio-block-3 > img {
+    height: 500px;
+    width: 100%;
+  }
+  .portfolio-block-3 > a {
+    opacity: 0;
+    position: absolute;
+    transition: all, 0.3s;
+  }
+  .portfolio-block-3 > a:hover {
+    opacity: 1;
+    transition: all, 0.3s;
+    backdrop-filter: blur(10px);
+  }
+  .portfolio-block-3 > h3 {
+    color: rgb(176, 0, 0);
+    font-size: 48px;
+    font-weight: 500;
+  }
+  .portfolio-block-3 > p {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 200px;
+  }
+  .portfolio-block-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: all, 0.5s;
+    gap: 20px;
+    transform: translateX(0%);
+  }
+  .portfolio-block-4 > img {
+    height: 500px;
+    width: 100%;
+  }
+  .portfolio-block-4 > a {
+    opacity: 0;
+    position: absolute;
+    transition: all, 0.3s;
+  }
+  .portfolio-block-4 > a:hover {
+    opacity: 1;
+    transition: all, 0.3s;
+    backdrop-filter: blur(10px);
+  }
+  .portfolio-block-4 > h3 {
+    color: rgb(176, 0, 0);
+    font-size: 48px;
+    font-weight: 500;
+  }
+  .portfolio-block-4 > p {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 200px;
+  }
+  .portfolio-block-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: all, 0.5s;
+    gap: 20px;
+    transform: translateX(0%);
+  }
+  .portfolio-block-5 > img {
+    height: 500px;
+    width: 100%;
+  }
+  .portfolio-block-5 > a {
+    opacity: 0;
+    position: absolute;
+    transition: all, 0.3s;
+  }
+  .portfolio-block-5 > a:hover {
+    opacity: 1;
+    transition: all, 0.3s;
+    backdrop-filter: blur(10px);
+  }
+  .portfolio-block-5 > h3 {
+    color: rgb(176, 0, 0);
+    font-size: 48px;
+    font-weight: 500;
+  }
+  .portfolio-block-5 > p {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 200px;
+  }
+  .portfolio .rightside {
+    position: absolute;
+    transition: all 0.5s;
+    opacity: 0;
+    transform: translateX(1000px);
+  }
+  .portfolio .rightside > a {
+    width: 0;
+    opacity: 0;
+  }
+  .portfolio .rightside > h3 {
+    opacity: 0;
+  }
+  .portfolio .rightside > p {
+    opacity: 0;
+  }
+  .portfolio .leftside {
+    position: absolute;
+    opacity: 0;
+    transform: translateX(-1000px);
+    transition: all, 0.5s;
+  }
+  .portfolio .leftside > a {
+    width: 0;
+    opacity: 0;
+  }
+  .portfolio .leftside > h3 {
+    opacity: 0;
+    transition: all 0.5;
+  }
+  .portfolio .leftside > p {
+    opacity: 0;
+    transition: all 0.5;
+  }
+  .portfolio-dots {
+    z-index: 3;
+    display: flex;
+    position: absolute;
+    gap: 10px;
+    left: 45%;
+    top: 470px;
+  }
+  .portfolio-dots > div {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: solid 2px #fff;
+  }
+  .portfolio .full {
+    background: #fff;
+  }
   .portfolio-btn-left {
     z-index: 2;
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 50px;
     background-image: url(../img/arr-right.svg);
     -webkit-transform: rotate(180deg);
@@ -300,11 +468,11 @@ h1, h2, h3, h4, h5, h6 {
     background-size: 40px 40px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    transition: all 0.3s;
+    transition: all, 0.3s;
   }
   .portfolio-btn-left:hover {
     background-color: rgba(255, 255, 255, 0.5);
-    transition: all 0.3s;
+    transition: all, 0.3s;
   }
 }
 
