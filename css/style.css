@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .start-text > h1 {
     font-weight: 700;
-    font-size: 48px;
+    font-size: 64px;
     color: #fff;
     align-self: flex-start;
   }
