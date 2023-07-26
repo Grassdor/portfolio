@@ -72,410 +72,414 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-@media (min-width: 1200px) {
-  body {
-    font-family: Unbounded;
-    overflow-x: hidden;
-  }
-  .container {
-    width: 1000px;
-  }
-  .header {
-    background-color: #92000a;
-    padding: 20px 100px;
-    height: 100px;
-  }
-  .header > img {
-    height: 60px;
-  }
-  .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    height: 150px;
-    gap: 20px;
-    text-align: center;
-  }
-  .footer > img {
-    height: 60px;
-  }
-  .start {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #92000a;
-    height: 800px;
-  }
-  .start-content {
-    display: flex;
-  }
-  .start-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 100px 0 0;
-    gap: 30px;
-  }
-  .start-text > h1 {
-    font-weight: 700;
-    font-size: 64px;
-    color: #fff;
-    align-self: flex-start;
-  }
-  .start-text > p {
-    color: #fff;
-    font-size: 16px;
-  }
-  .start-btn {
-    display: none;
-    background: #fff;
-    color: #000;
-    text-align: center;
-    height: 48px;
-    padding: 16px;
-    border-radius: 10px;
-    font-weight: 700;
-    width: 100%;
-  }
-  .start-img {
-    width: 100%;
-    height: 600px;
-    border-radius: 20px;
-    background-image: linear-gradient(to top, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url(../img/adam-jicha-wHPO8RFR6Sk-unsplash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .squad {
-    margin: 100px 0 0 0;
-    display: flex;
-    justify-content: center;
-  }
-  .squad > div > h2 {
-    color: rgb(176, 0, 0);
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    margin: 0 0 30px 0;
-  }
-  .squad > div > p {
-    color: #000;
-    text-align: center;
-    font-size: 16px;
-    padding: 0 200px;
-    margin: 0 0 60px 0;
-  }
-  .squad-row {
-    display: flex;
-    gap: 32px;
-  }
-  .squad-column {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-  }
-  .squad-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    height: 300px;
-    background: #f2f2f2;
-    color: rgb(176, 0, 0);
-    border-radius: 20px;
-  }
-  .squad-card > img {
-    object-fit: cover;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
-  .squad-card > h3 {
-    font-weight: 700;
-    font-size: 20px;
-    text-transform: uppercase;
-  }
-  .portfolio {
-    display: flex;
-    justify-content: center;
-  }
-  .portfolio > div {
-    display: flex;
-    flex-direction: column;
-    margin-top: 150px;
-  }
-  .portfolio > div > h2 {
-    text-align: left;
-    color: rgb(176, 0, 0);
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 50px;
-  }
-  .portfolio-gallery {
-    position: relative;
-  }
-  .portfolio-btn-right {
-    position: absolute;
-    z-index: 2;
-    top: 30%;
-    right: 50px;
-    background-image: url(../img/arr-right.svg);
-    height: 64px;
-    width: 64px;
-    border-radius: 50%;
-    background-size: 40px 40px;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    transition: all, 0.3s;
-  }
-  .portfolio-btn-right:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    transition: all, 0.3s;
-  }
-  .portfolio-imgs {
-    position: relative;
-    display: flex;
-  }
-  .portfolio-block-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    gap: 20px;
-    transform: translateX(0%);
-    transition: all, 0.5s !important;
-  }
-  .portfolio-block-1 > img {
-    height: 500px;
-    width: 100%;
-  }
-  .portfolio-block-1 > a {
-    opacity: 0;
-    position: absolute;
-    transition: all, 0.3s;
-  }
-  .portfolio-block-1 > a:hover {
-    opacity: 1;
-    transition: all, 0.3s;
-    backdrop-filter: blur(10px);
-  }
-  .portfolio-block-1 > h3 {
-    color: rgb(176, 0, 0);
-    font-size: 48px;
-    font-weight: 500;
-  }
-  .portfolio-block-1 > p {
-    font-size: 14px;
-    text-align: center;
-    padding: 0 200px;
-  }
-  .portfolio-block-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    transform: translateX(0%);
-    transition: all, 0.5s;
-    gap: 20px;
-  }
-  .portfolio-block-2 > img {
-    height: 500px;
-    width: 100%;
-  }
-  .portfolio-block-2 > a {
-    opacity: 0;
-    position: absolute;
-    transition: all, 0.3s;
-  }
-  .portfolio-block-2 > a:hover {
-    opacity: 1;
-    transition: all, 0.3s;
-    backdrop-filter: blur(10px);
-  }
-  .portfolio-block-2 > h3 {
-    color: rgb(176, 0, 0);
-    font-size: 48px;
-    font-weight: 500;
-  }
-  .portfolio-block-2 > p {
-    font-size: 14px;
-    text-align: center;
-    padding: 0 200px;
-  }
-  .portfolio-block-3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    transition: all, 0.5s;
-    gap: 20px;
-    transform: translateX(0%);
-  }
-  .portfolio-block-3 > img {
-    height: 500px;
-    width: 100%;
-  }
-  .portfolio-block-3 > a {
-    opacity: 0;
-    position: absolute;
-    transition: all, 0.3s;
-  }
-  .portfolio-block-3 > a:hover {
-    opacity: 1;
-    transition: all, 0.3s;
-    backdrop-filter: blur(10px);
-  }
-  .portfolio-block-3 > h3 {
-    color: rgb(176, 0, 0);
-    font-size: 48px;
-    font-weight: 500;
-  }
-  .portfolio-block-3 > p {
-    font-size: 14px;
-    text-align: center;
-    padding: 0 200px;
-  }
-  .portfolio-block-4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    transition: all, 0.5s;
-    gap: 20px;
-    transform: translateX(0%);
-  }
-  .portfolio-block-4 > img {
-    height: 500px;
-    width: 100%;
-  }
-  .portfolio-block-4 > a {
-    opacity: 0;
-    position: absolute;
-    transition: all, 0.3s;
-  }
-  .portfolio-block-4 > a:hover {
-    opacity: 1;
-    transition: all, 0.3s;
-    backdrop-filter: blur(10px);
-  }
-  .portfolio-block-4 > h3 {
-    color: rgb(176, 0, 0);
-    font-size: 48px;
-    font-weight: 500;
-  }
-  .portfolio-block-4 > p {
-    font-size: 14px;
-    text-align: center;
-    padding: 0 200px;
-  }
-  .portfolio-block-5 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    transition: all, 0.5s;
-    gap: 20px;
-    transform: translateX(0%);
-  }
-  .portfolio-block-5 > img {
-    height: 500px;
-    width: 100%;
-  }
-  .portfolio-block-5 > a {
-    opacity: 0;
-    position: absolute;
-    transition: all, 0.3s;
-  }
-  .portfolio-block-5 > a:hover {
-    opacity: 1;
-    transition: all, 0.3s;
-    backdrop-filter: blur(10px);
-  }
-  .portfolio-block-5 > h3 {
-    color: rgb(176, 0, 0);
-    font-size: 48px;
-    font-weight: 500;
-  }
-  .portfolio-block-5 > p {
-    font-size: 14px;
-    text-align: center;
-    padding: 0 200px;
-  }
-  .portfolio .rightside {
-    position: absolute;
-    transition: all 0.5s;
-    opacity: 0;
-    transform: translateX(1000px);
-  }
-  .portfolio .rightside > a {
-    width: 0;
-    opacity: 0;
-  }
-  .portfolio .rightside > h3 {
-    opacity: 0;
-  }
-  .portfolio .rightside > p {
-    opacity: 0;
-  }
-  .portfolio .leftside {
-    position: absolute;
-    opacity: 0;
-    transform: translateX(-1000px);
-    transition: all, 0.5s;
-  }
-  .portfolio .leftside > a {
-    width: 0;
-    opacity: 0;
-  }
-  .portfolio .leftside > h3 {
-    opacity: 0;
-    transition: all 0.5;
-  }
-  .portfolio .leftside > p {
-    opacity: 0;
-    transition: all 0.5;
-  }
-  .portfolio-dots {
-    z-index: 3;
-    display: flex;
-    position: absolute;
-    gap: 10px;
-    left: 45%;
-    top: 470px;
-  }
-  .portfolio-dots > div {
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    border: solid 2px #fff;
-  }
-  .portfolio .full {
-    background: #fff;
-  }
-  .portfolio-btn-left {
-    z-index: 2;
-    position: absolute;
-    top: 30%;
-    left: 50px;
-    background-image: url(../img/arr-right.svg);
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    height: 64px;
-    width: 64px;
-    border-radius: 50%;
-    background-size: 40px 40px;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    transition: all, 0.3s;
-  }
-  .portfolio-btn-left:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    transition: all, 0.3s;
-  }
+body {
+  font-family: Unbounded;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 1000px;
+}
+
+.header {
+  background-color: #92000a;
+  padding: 20px 100px;
+  height: 100px;
+}
+.header > img {
+  height: 60px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 150px;
+  gap: 20px;
+  text-align: center;
+}
+.footer > img {
+  height: 60px;
+}
+
+.start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #92000a;
+  height: 800px;
+}
+.start-content {
+  display: flex;
+}
+.start-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px 0 0;
+  gap: 30px;
+}
+.start-text > h1 {
+  font-weight: 700;
+  font-size: 64px;
+  color: #fff;
+  align-self: flex-start;
+}
+.start-text > p {
+  color: #fff;
+  font-size: 16px;
+}
+.start-btn {
+  display: none;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  height: 48px;
+  padding: 16px;
+  border-radius: 10px;
+  font-weight: 700;
+  width: 100%;
+}
+.start-img {
+  width: 100%;
+  height: 600px;
+  border-radius: 20px;
+  background-image: linear-gradient(to top, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url(../img/adam-jicha-wHPO8RFR6Sk-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.squad {
+  margin: 100px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+.squad > div > h2 {
+  color: rgb(176, 0, 0);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+.squad > div > p {
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  padding: 0 200px;
+  margin: 0 0 60px 0;
+}
+.squad-row {
+  display: flex;
+  gap: 32px;
+}
+.squad-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.squad-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 300px;
+  background: #f2f2f2;
+  color: rgb(176, 0, 0);
+  border-radius: 20px;
+}
+.squad-card > img {
+  object-fit: cover;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.squad-card > h3 {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+}
+.portfolio > div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+}
+.portfolio > div > h2 {
+  text-align: left;
+  color: rgb(176, 0, 0);
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.portfolio-gallery {
+  position: relative;
+}
+.portfolio-btn-right {
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  right: 50px;
+  background-image: url(../img/arr-right.svg);
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  background-size: 40px 40px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  transition: all, 0.3s;
+}
+.portfolio-btn-right:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all, 0.3s;
+}
+.portfolio-imgs {
+  position: relative;
+  display: flex;
+}
+.portfolio-block-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 20px;
+  transform: translateX(0%);
+  transition: all, 0.5s !important;
+}
+.portfolio-block-1 > img {
+  height: 500px;
+  width: 100%;
+}
+.portfolio-block-1 > a {
+  opacity: 0;
+  position: absolute;
+  transition: all, 0.3s;
+}
+.portfolio-block-1 > a:hover {
+  opacity: 1;
+  transition: all, 0.3s;
+  backdrop-filter: blur(10px);
+}
+.portfolio-block-1 > h3 {
+  color: rgb(176, 0, 0);
+  font-size: 48px;
+  font-weight: 500;
+}
+.portfolio-block-1 > p {
+  font-size: 14px;
+  text-align: center;
+  padding: 0 200px;
+}
+.portfolio-block-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transform: translateX(0%);
+  transition: all, 0.5s;
+  gap: 20px;
+}
+.portfolio-block-2 > img {
+  height: 500px;
+  width: 100%;
+}
+.portfolio-block-2 > a {
+  opacity: 0;
+  position: absolute;
+  transition: all, 0.3s;
+}
+.portfolio-block-2 > a:hover {
+  opacity: 1;
+  transition: all, 0.3s;
+  backdrop-filter: blur(10px);
+}
+.portfolio-block-2 > h3 {
+  color: rgb(176, 0, 0);
+  font-size: 48px;
+  font-weight: 500;
+}
+.portfolio-block-2 > p {
+  font-size: 14px;
+  text-align: center;
+  padding: 0 200px;
+}
+.portfolio-block-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: all, 0.5s;
+  gap: 20px;
+  transform: translateX(0%);
+}
+.portfolio-block-3 > img {
+  height: 500px;
+  width: 100%;
+}
+.portfolio-block-3 > a {
+  opacity: 0;
+  position: absolute;
+  transition: all, 0.3s;
+}
+.portfolio-block-3 > a:hover {
+  opacity: 1;
+  transition: all, 0.3s;
+  backdrop-filter: blur(10px);
+}
+.portfolio-block-3 > h3 {
+  color: rgb(176, 0, 0);
+  font-size: 48px;
+  font-weight: 500;
+}
+.portfolio-block-3 > p {
+  font-size: 14px;
+  text-align: center;
+  padding: 0 200px;
+}
+.portfolio-block-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: all, 0.5s;
+  gap: 20px;
+  transform: translateX(0%);
+}
+.portfolio-block-4 > img {
+  height: 500px;
+  width: 100%;
+}
+.portfolio-block-4 > a {
+  opacity: 0;
+  position: absolute;
+  transition: all, 0.3s;
+}
+.portfolio-block-4 > a:hover {
+  opacity: 1;
+  transition: all, 0.3s;
+  backdrop-filter: blur(10px);
+}
+.portfolio-block-4 > h3 {
+  color: rgb(176, 0, 0);
+  font-size: 48px;
+  font-weight: 500;
+}
+.portfolio-block-4 > p {
+  font-size: 14px;
+  text-align: center;
+  padding: 0 200px;
+}
+.portfolio-block-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: all, 0.5s;
+  gap: 20px;
+  transform: translateX(0%);
+}
+.portfolio-block-5 > img {
+  height: 500px;
+  width: 100%;
+}
+.portfolio-block-5 > a {
+  opacity: 0;
+  position: absolute;
+  transition: all, 0.3s;
+}
+.portfolio-block-5 > a:hover {
+  opacity: 1;
+  transition: all, 0.3s;
+  backdrop-filter: blur(10px);
+}
+.portfolio-block-5 > h3 {
+  color: rgb(176, 0, 0);
+  font-size: 48px;
+  font-weight: 500;
+}
+.portfolio-block-5 > p {
+  font-size: 14px;
+  text-align: center;
+  padding: 0 200px;
+}
+.portfolio .rightside {
+  position: absolute;
+  transition: all 0.5s;
+  opacity: 0;
+  transform: translateX(1000px);
+}
+.portfolio .rightside > a {
+  width: 0;
+  opacity: 0;
+}
+.portfolio .rightside > h3 {
+  opacity: 0;
+}
+.portfolio .rightside > p {
+  opacity: 0;
+}
+.portfolio .leftside {
+  position: absolute;
+  opacity: 0;
+  transform: translateX(-1000px);
+  transition: all, 0.5s;
+}
+.portfolio .leftside > a {
+  width: 0;
+  opacity: 0;
+}
+.portfolio .leftside > h3 {
+  opacity: 0;
+  transition: all 0.5;
+}
+.portfolio .leftside > p {
+  opacity: 0;
+  transition: all 0.5;
+}
+.portfolio-dots {
+  z-index: 3;
+  display: flex;
+  position: absolute;
+  gap: 10px;
+  left: 45%;
+  top: 470px;
+}
+.portfolio-dots > div {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: solid 2px #fff;
+}
+.portfolio .full {
+  background: #fff;
+}
+.portfolio-btn-left {
+  z-index: 2;
+  position: absolute;
+  top: 30%;
+  left: 50px;
+  background-image: url(../img/arr-right.svg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  background-size: 40px 40px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  transition: all, 0.3s;
+}
+.portfolio-btn-left:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all, 0.3s;
 }
 
 /*# sourceMappingURL=style.css.map */
