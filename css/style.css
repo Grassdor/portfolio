@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Unbounded:wght@400;500;600;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -74,14 +74,14 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1200px) {
   body {
-    font-family: Roboto;
+    font-family: Unbounded;
     overflow-x: hidden;
   }
   .container {
     width: 1000px;
   }
   .header {
-    background-color: rgb(255, 0, 0);
+    background-color: #92000a;
     padding: 20px 100px;
     height: 100px;
   }
@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(255, 0, 0);
+    background: #92000a;
     height: 800px;
   }
   .start-content {
@@ -129,6 +129,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 16px;
   }
   .start-btn {
+    display: none;
     background: #fff;
     color: #000;
     text-align: center;
