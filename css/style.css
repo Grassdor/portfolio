@@ -188,6 +188,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 20px;
   }
   .squad-card > img {
+    object-fit: cover;
     height: 80px;
     width: 80px;
     border-radius: 50%;

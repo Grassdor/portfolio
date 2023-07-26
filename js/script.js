@@ -51,7 +51,7 @@ function buttonLeft() {
     if (n == 1) {
       document.querySelector(`.portfolio-block-1`).classList.remove("rightside");
       document.querySelector(`#dot-${n}`).classList.toggle('full')
-      document.querySelector(`#dot-${5}`).classList.toggle('full')
+      document.querySelector(`#dot-${cardsQuantity}`).classList.toggle('full')
       while (n != cardsQuantity) {
         document
           .querySelector(`.portfolio-block-${n}`)
