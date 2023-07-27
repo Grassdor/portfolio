@@ -23,24 +23,24 @@ window.onload = function () {
 let n = 1;
 function buttonRight() {
   if (n == cardsQuantity) {
-    document.querySelector(`.portfolio-block-1`).classList.toggle("leftside");
+    document.querySelector(`#portfolio-1`).classList.toggle("leftside");
     document.querySelector(`#dot-${n}`).classList.toggle('full')
       document.querySelector(`#dot-${1}`).classList.toggle('full')
     while (n != 1) {
       document
-        .querySelector(`.portfolio-block-${n}`)
+        .querySelector(`#portfolio-${n}`)
         .classList.add("rightside");
       document
-        .querySelector(`.portfolio-block-${n - 1}`)
+        .querySelector(`#portfolio-${n - 1}`)
         .classList.remove("leftside");
       
       n--;
     }
     
   } else {
-    document.querySelector(`.portfolio-block-${n}`).classList.toggle("leftside");
+    document.querySelector(`#portfolio-${n}`).classList.toggle("leftside");
     document
-      .querySelector(`.portfolio-block-${n + 1}`)
+      .querySelector(`#portfolio-${n + 1}`)
       .classList.remove("rightside");
       document.querySelector(`#dot-${n}`).classList.toggle('full');
       document.querySelector(`#dot-${n + 1}`).classList.toggle('full');
@@ -49,22 +49,22 @@ function buttonRight() {
 }
 function buttonLeft() {
     if (n == 1) {
-      document.querySelector(`.portfolio-block-1`).classList.remove("rightside");
+      document.querySelector(`#portfolio-1`).classList.remove("rightside");
       document.querySelector(`#dot-${n}`).classList.toggle('full')
       document.querySelector(`#dot-${cardsQuantity}`).classList.toggle('full')
       while (n != cardsQuantity) {
         document
-          .querySelector(`.portfolio-block-${n}`)
+          .querySelector(`#portfolio-${n}`)
           .classList.add("leftside");
         document
-          .querySelector(`.portfolio-block-${n + 1}`)
+          .querySelector(`#portfolio-${n + 1}`)
           .classList.remove("rightside");
         n++;
       }
     } else {
-      document.querySelector(`.portfolio-block-${n}`).classList.add("rightside");
+      document.querySelector(`#portfolio-${n}`).classList.add("rightside");
       document
-        .querySelector(`.portfolio-block-${n - 1}`)
+        .querySelector(`#portfolio-${n - 1}`)
         .classList.remove("leftside");
         document.querySelector(`#dot-${n}`).classList.toggle('full');
       document.querySelector(`#dot-${n - 1}`).classList.toggle('full');

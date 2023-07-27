@@ -245,7 +245,7 @@ body {
   position: relative;
   display: flex;
 }
-.portfolio-block-1 {
+.portfolio-block {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -254,158 +254,35 @@ body {
   transform: translateX(0%);
   transition: all, 0.5s !important;
 }
-.portfolio-block-1 > img {
+.portfolio-block > img {
   height: 500px;
   width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
 }
-.portfolio-block-1 > a {
+.portfolio-block > a {
   opacity: 0;
   position: absolute;
   transition: all, 0.3s;
+  overflow: hidden;
 }
-.portfolio-block-1 > a:hover {
+.portfolio-block > a:hover {
   opacity: 1;
   transition: all, 0.3s;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  overflow: hidden;
 }
-.portfolio-block-1 > h3 {
+.portfolio-block > a:hover > img {
+  border-radius: 20px;
+}
+.portfolio-block > h3 {
   color: rgb(176, 0, 0);
   font-size: 48px;
   font-weight: 500;
 }
-.portfolio-block-1 > p {
-  font-size: 14px;
-  text-align: center;
-  padding: 0 200px;
-}
-.portfolio-block-2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  transform: translateX(0%);
-  transition: all, 0.5s;
-  gap: 20px;
-}
-.portfolio-block-2 > img {
-  height: 500px;
-  width: 100%;
-}
-.portfolio-block-2 > a {
-  opacity: 0;
-  position: absolute;
-  transition: all, 0.3s;
-}
-.portfolio-block-2 > a:hover {
-  opacity: 1;
-  transition: all, 0.3s;
-  backdrop-filter: blur(10px);
-}
-.portfolio-block-2 > h3 {
-  color: rgb(176, 0, 0);
-  font-size: 48px;
-  font-weight: 500;
-}
-.portfolio-block-2 > p {
-  font-size: 14px;
-  text-align: center;
-  padding: 0 200px;
-}
-.portfolio-block-3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  transition: all, 0.5s;
-  gap: 20px;
-  transform: translateX(0%);
-}
-.portfolio-block-3 > img {
-  height: 500px;
-  width: 100%;
-}
-.portfolio-block-3 > a {
-  opacity: 0;
-  position: absolute;
-  transition: all, 0.3s;
-}
-.portfolio-block-3 > a:hover {
-  opacity: 1;
-  transition: all, 0.3s;
-  backdrop-filter: blur(10px);
-}
-.portfolio-block-3 > h3 {
-  color: rgb(176, 0, 0);
-  font-size: 48px;
-  font-weight: 500;
-}
-.portfolio-block-3 > p {
-  font-size: 14px;
-  text-align: center;
-  padding: 0 200px;
-}
-.portfolio-block-4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  transition: all, 0.5s;
-  gap: 20px;
-  transform: translateX(0%);
-}
-.portfolio-block-4 > img {
-  height: 500px;
-  width: 100%;
-}
-.portfolio-block-4 > a {
-  opacity: 0;
-  position: absolute;
-  transition: all, 0.3s;
-}
-.portfolio-block-4 > a:hover {
-  opacity: 1;
-  transition: all, 0.3s;
-  backdrop-filter: blur(10px);
-}
-.portfolio-block-4 > h3 {
-  color: rgb(176, 0, 0);
-  font-size: 48px;
-  font-weight: 500;
-}
-.portfolio-block-4 > p {
-  font-size: 14px;
-  text-align: center;
-  padding: 0 200px;
-}
-.portfolio-block-5 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  transition: all, 0.5s;
-  gap: 20px;
-  transform: translateX(0%);
-}
-.portfolio-block-5 > img {
-  height: 500px;
-  width: 100%;
-}
-.portfolio-block-5 > a {
-  opacity: 0;
-  position: absolute;
-  transition: all, 0.3s;
-}
-.portfolio-block-5 > a:hover {
-  opacity: 1;
-  transition: all, 0.3s;
-  backdrop-filter: blur(10px);
-}
-.portfolio-block-5 > h3 {
-  color: rgb(176, 0, 0);
-  font-size: 48px;
-  font-weight: 500;
-}
-.portfolio-block-5 > p {
+.portfolio-block > p {
   font-size: 14px;
   text-align: center;
   padding: 0 200px;
@@ -449,7 +326,7 @@ body {
   display: flex;
   position: absolute;
   gap: 10px;
-  left: 45%;
+  left: 39.2%;
   top: 470px;
 }
 .portfolio-dots > div {
