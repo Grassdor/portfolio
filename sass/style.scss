@@ -160,7 +160,7 @@ body {
   &-btn-right{
     position: absolute;
     z-index: 2;
-    top: 30%;
+    top: 218px;
     right: 50px;
     background-image: url(../img/arr-right.svg);
     height: 64px;
@@ -180,6 +180,7 @@ body {
     
 }
   &-block{
+    height: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -283,7 +284,7 @@ body {
   &-btn-left{
     z-index: 2;
     position: absolute;
-    top: 30%;
+    top: 218px;
     left: 50px;
     background-image: url(../img/arr-right.svg);
     -webkit-transform: rotate(180deg);
