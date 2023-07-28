@@ -14,11 +14,20 @@ body {
     width: 1000px;
 }
 .header {
+    display: flex;
+    justify-content: space-between;
     background-color: $main-color;
     padding: 20px 100px;
     height: 100px;
     > img {
       height: 60px;
+    }
+    &-alert {
+      color: #92000a;
+      background: #fff;
+      padding: 5px;
+      border-radius: 10px;
+      height: fit-content;
     }
 }
 .footer{

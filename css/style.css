@@ -82,12 +82,21 @@ body {
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
   background-color: #92000a;
   padding: 20px 100px;
   height: 100px;
 }
 .header > img {
   height: 60px;
+}
+.header-alert {
+  color: #92000a;
+  background: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  height: fit-content;
 }
 
 .footer {
